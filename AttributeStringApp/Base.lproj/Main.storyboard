@@ -16,17 +16,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SC0-2x-47W">
-                                <rect key="frame" x="20" y="82" width="280" height="334"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SC0-2x-47W">
+                                <rect key="frame" x="20" y="73" width="280" height="363"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <string key="text">Select a word or more and tap on a color to change the color of the word. You can also select a word or more and apply a outline to it. Selecting the outlined word you can revert it back to its normal font. When you have some words with different colors and outlined you can click on the details an see how many character you modified.</string>
+                                <mutableString key="text">Select a word or more and tap on a color to change the color of the word. You can also select a word or more and apply a outline to it. Selecting the outlined word you can revert it back to its normal font. When you have some words with different colors and outlined you can click on the details an see how many character you modified.
+
+Select a word or more and tap on a color to change the color of the word. You can also select a word or more and apply a outline to it. Selecting the outlined word you can revert it back to its normal font. When you have some words with different colors and outlined you can click on the details an see how many character you modified.</mutableString>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q3r-hq-ayN">
-                                <rect key="frame" x="20" y="518" width="49" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q3r-hq-ayN">
+                                <rect key="frame" x="20" y="516" width="63" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Outline">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -34,9 +37,10 @@
                                     <action selector="outlineText:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="LKg-fC-mFh"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mj0-9d-0Ka">
-                                <rect key="frame" x="234" y="518" width="66" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mj0-9d-0Ka">
+                                <rect key="frame" x="229" y="516" width="84" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Unoutline">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -44,10 +48,13 @@
                                     <action selector="unoutlineText:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="4Sd-5M-1U0"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IEy-fA-rlx">
-                                <rect key="frame" x="20" y="424" width="64" height="64"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IEy-fA-rlx">
+                                <rect key="frame" x="20" y="444" width="64" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="q4y-89-Uey"/>
+                                </constraints>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -55,8 +62,8 @@
                                     <action selector="colorButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="6gd-yf-qLC"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mok-Yo-GdW">
-                                <rect key="frame" x="92" y="424" width="64" height="64"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mok-Yo-GdW">
+                                <rect key="frame" x="92" y="444" width="64" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -67,8 +74,8 @@
                                     <action selector="colorButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="aBx-oT-gKL"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e2W-2k-FKH">
-                                <rect key="frame" x="164" y="424" width="64" height="64"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e2W-2k-FKH">
+                                <rect key="frame" x="164" y="444" width="64" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -79,8 +86,8 @@
                                     <action selector="colorButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="pnd-y6-n6Z"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Wa-w6-vGu">
-                                <rect key="frame" x="236" y="424" width="64" height="64"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Wa-w6-vGu">
+                                <rect key="frame" x="236" y="444" width="64" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -93,6 +100,34 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="e2W-2k-FKH" firstAttribute="leading" secondItem="Mok-Yo-GdW" secondAttribute="trailing" constant="8" symbolic="YES" id="3nq-wf-RsZ"/>
+                            <constraint firstItem="IEy-fA-rlx" firstAttribute="leading" secondItem="SC0-2x-47W" secondAttribute="leading" id="4Jp-99-WvQ"/>
+                            <constraint firstAttribute="trailing" secondItem="SC0-2x-47W" secondAttribute="trailing" constant="20" symbolic="YES" id="5lB-Ne-FJv"/>
+                            <constraint firstItem="2Wa-w6-vGu" firstAttribute="leading" secondItem="e2W-2k-FKH" secondAttribute="trailing" constant="8" symbolic="YES" id="6Za-z2-hy3"/>
+                            <constraint firstItem="SC0-2x-47W" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" symbolic="YES" id="6dn-wY-UMl"/>
+                            <constraint firstItem="2Wa-w6-vGu" firstAttribute="baseline" secondItem="Mok-Yo-GdW" secondAttribute="baseline" id="6me-Nd-TLI"/>
+                            <constraint firstItem="Mok-Yo-GdW" firstAttribute="bottom" secondItem="e2W-2k-FKH" secondAttribute="bottom" id="8LC-QC-L6E"/>
+                            <constraint firstItem="SC0-2x-47W" firstAttribute="top" secondItem="tPU-7z-Otb" secondAttribute="bottom" constant="9" id="BYV-HM-gKK"/>
+                            <constraint firstItem="e2W-2k-FKH" firstAttribute="width" secondItem="2Wa-w6-vGu" secondAttribute="width" id="Bz9-lP-ILx"/>
+                            <constraint firstItem="e2W-2k-FKH" firstAttribute="top" secondItem="Mok-Yo-GdW" secondAttribute="top" id="EPt-UQ-6Am"/>
+                            <constraint firstItem="q3r-hq-ayN" firstAttribute="top" secondItem="Mj0-9d-0Ka" secondAttribute="top" id="G14-77-4ZO"/>
+                            <constraint firstItem="2Wa-w6-vGu" firstAttribute="baseline" secondItem="e2W-2k-FKH" secondAttribute="baseline" id="NY5-Ev-zyN"/>
+                            <constraint firstItem="Mj0-9d-0Ka" firstAttribute="top" secondItem="2Wa-w6-vGu" secondAttribute="bottom" constant="8" symbolic="YES" id="RNg-Uf-ZIe"/>
+                            <constraint firstItem="IEy-fA-rlx" firstAttribute="top" secondItem="Mok-Yo-GdW" secondAttribute="top" id="Uhd-Ty-l7P"/>
+                            <constraint firstItem="q3r-hq-ayN" firstAttribute="top" secondItem="IEy-fA-rlx" secondAttribute="bottom" constant="8" symbolic="YES" id="VnH-cG-ehP"/>
+                            <constraint firstItem="e2W-2k-FKH" firstAttribute="width" secondItem="Mok-Yo-GdW" secondAttribute="width" id="fON-6K-mS5"/>
+                            <constraint firstItem="e2W-2k-FKH" firstAttribute="top" secondItem="2Wa-w6-vGu" secondAttribute="top" id="fe0-lf-ByC"/>
+                            <constraint firstItem="Mok-Yo-GdW" firstAttribute="leading" secondItem="IEy-fA-rlx" secondAttribute="trailing" constant="8" symbolic="YES" id="gF4-ag-nmM"/>
+                            <constraint firstItem="IEy-fA-rlx" firstAttribute="leading" secondItem="q3r-hq-ayN" secondAttribute="leading" id="kcN-yN-clt"/>
+                            <constraint firstItem="Mok-Yo-GdW" firstAttribute="baseline" secondItem="e2W-2k-FKH" secondAttribute="baseline" id="lAa-X1-iAY"/>
+                            <constraint firstItem="IEy-fA-rlx" firstAttribute="bottom" secondItem="Mok-Yo-GdW" secondAttribute="bottom" id="oKu-4y-nQN"/>
+                            <constraint firstAttribute="trailing" secondItem="Mj0-9d-0Ka" secondAttribute="trailing" constant="7" id="qgP-rt-WNm"/>
+                            <constraint firstItem="e2W-2k-FKH" firstAttribute="width" secondItem="IEy-fA-rlx" secondAttribute="width" id="rVA-zi-LgF"/>
+                            <constraint firstItem="IEy-fA-rlx" firstAttribute="top" secondItem="SC0-2x-47W" secondAttribute="bottom" constant="8" id="uVK-Nu-O91"/>
+                            <constraint firstItem="2Wa-w6-vGu" firstAttribute="trailing" secondItem="SC0-2x-47W" secondAttribute="trailing" id="uVV-su-Fiy"/>
+                            <constraint firstItem="Z9Z-kL-ksg" firstAttribute="top" secondItem="q3r-hq-ayN" secondAttribute="bottom" constant="16" id="z9S-QP-Aev"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="AttributeString" id="8D0-fR-f5M">
                         <barButtonItem key="rightBarButtonItem" title="Details" id="ptR-lZ-bcH">
@@ -122,21 +157,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0 colorful characters" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0UN-LV-PxJ">
-                                <rect key="frame" x="20" y="121" width="280" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 colorful characters" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0UN-LV-PxJ">
+                                <rect key="frame" x="20" y="527" width="157" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0 outlined characters" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ijV-ZW-cJy">
-                                <rect key="frame" x="20" y="172" width="280" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 outlined characters" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ijV-ZW-cJy">
+                                <rect key="frame" x="20" y="498" width="162" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0UN-LV-PxJ" firstAttribute="leading" secondItem="ijV-ZW-cJy" secondAttribute="leading" id="8Sd-uY-GMn"/>
+                            <constraint firstItem="ijV-ZW-cJy" firstAttribute="leading" secondItem="ike-6R-5IW" secondAttribute="leading" constant="20" symbolic="YES" id="FOe-6s-SgK"/>
+                            <constraint firstItem="0UN-LV-PxJ" firstAttribute="top" secondItem="ijV-ZW-cJy" secondAttribute="bottom" constant="8" symbolic="YES" id="cAI-eR-URK"/>
+                            <constraint firstAttribute="bottom" secondItem="0UN-LV-PxJ" secondAttribute="bottom" constant="20" symbolic="YES" id="prp-8i-ebq"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="VEw-Wh-FQd"/>
                     <connections>
